@@ -1,0 +1,1 @@
+<demo src="./demos/gen-class.vue" />

@@ -7,6 +7,7 @@ export default defineConfig({
   rewrites: {
     'docs/(.*)': '(.*)',
     'packages/tov-ui/src/components/:comp/(.*)': 'components/:comp/(.*)',
+    'packages/utils/src/(.*)': 'utils/(.*)',
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -24,6 +25,12 @@ export default defineConfig({
         {
           text: '输入框',
           link: '/components/input/',
+        },
+      ],
+      '/utils': [
+        {
+          text: 'genClass',
+          link: '/utils/gen-class',
         },
       ],
     },
