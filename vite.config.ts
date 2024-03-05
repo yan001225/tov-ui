@@ -14,6 +14,10 @@ export default defineConfig({
   resolve: {
     alias: [
       {
+        find: /^tov-ui/,
+        replacement: path.resolve(baseUrl, 'packages/tov-ui/src'),
+      },
+      {
         find: /^@\/tov-ui\/utils/,
         replacement: path.resolve(baseUrl, 'packages/utils/src'),
       },
